@@ -1,0 +1,27 @@
+<!--pages/chaoxi/index.wxml-->
+<view class="container">
+	<view class="header">
+		<view class="city">
+			<button type="primary" plain="true" size="2">青岛</button>
+		</view>
+		<view class="date">
+      <text decode="true" class="date-last"> &lt; &nbsp;&nbsp;&nbsp;</text>
+			<text>2020-7-27</text>      
+      <text decode="true" class="date-next">&nbsp;&nbsp;&nbsp; &gt; </text>
+		</view>
+    <view class="high-low">
+      <view>
+        <text>高点 12:30 400cm | 00:30 390cm</text>
+      </view>
+      <view class="line"></view>
+      <view>
+        <text>低点 15:40 100cm | 03:40 100cm</text>
+      </view>
+    </view>
+	</view>
+	<view class="title">
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+		</view>
+	</view>
+</view>
